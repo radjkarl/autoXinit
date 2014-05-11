@@ -1,5 +1,4 @@
-# -*- coding: utf-8 -*-
-__all__ = []
+__all__ = ['testClass', 'testFunction', 'testModule', 'testModuleClass', 'testModuleFunction']
 # Don't modify the line above, or this line!
 from autoxinit import autoxinit
 autoxinit(__name__, __file__, globals())
