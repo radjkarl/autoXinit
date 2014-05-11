@@ -1,5 +1,5 @@
 ==========================
-AutoXinit - lazy importing
+autoXinit - lazy importing
 ==========================
 
 This package extends the the py-package 'automodinit' with the option also to import classes and functions inside a module.
@@ -13,7 +13,7 @@ This is useful if the *'one class/function per file'* principle is used
 
 - Find the original `http://pypi.python.org/pypi/automodinit <http://pypi.python.org/pypi/automodinit>`_
 
-To init your package with AutoXinit add the following to your __init__.py::
+To init your package with **autoXinit** add the following to your __init__.py::
 
     __all__ = []
     # Don't modify the line above, or this line!
@@ -21,7 +21,7 @@ To init your package with AutoXinit add the following to your __init__.py::
     autoxinit(__name__, __file__, globals())
     del autoxinit
 
-AutoXinit also provides a **test** package. Importing this module via::
+**autoXinit** also provides a **test** package. Importing this module via::
 
     from autoxinit import test
 
