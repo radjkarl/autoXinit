@@ -29,6 +29,7 @@ AutoXinit also provides a **test** package. Importing this module via::
 2. Imports all modules AND all included (dummy) functions/classes. If a function/class share the same same with its parent module calling the modules name leeds to the function/class.
 
 File structure of the **test** package:
+
 - testClass.py
     - class testClass
 - testFunction.py
