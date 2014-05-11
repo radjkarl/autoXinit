@@ -1,8 +1,0 @@
-[distutils]
-index-servers=
-    test
-
-[test]
-repository = https://testpypi.python.org/pypi
-username = radjkarl
-password = auto123Xinit
