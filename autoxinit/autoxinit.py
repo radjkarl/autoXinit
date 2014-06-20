@@ -13,7 +13,6 @@ def autoxinit(fullpkgname, initfilepath, _g, filter=None,
 
 	if filter is not None: pkgcontents=filter(pkgcontents)
 
-
 	modulefiles=[x[1] for x in pkgcontents]
 
 	if import_modules:
@@ -26,7 +25,15 @@ def autoxinit(fullpkgname, initfilepath, _g, filter=None,
 			_g[modulename]=module
 			##################################
 			#this wont be found in automodinit:
-			if not ispkg: #only list contents of modules
+
+			try:#if there is 'AUTOXINIT_IMPORT_MEMBERS = False' in this module:
+				#dont import functions, classes
+				if not module.AUTOXINIT_IMPORT_MEMBERS:
+					continue
+			except AttributeError:
+				pass
+
+			if not ispkg: #only list contents of modules / ignore packages
 				for (cond, isobj) in ((import_classes, inspect.isclass), (import_functions,inspect.isfunction)):
 					if cond:
 						for name, obj in inspect.getmembers(module, isobj):

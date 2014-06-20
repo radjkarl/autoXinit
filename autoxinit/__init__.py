@@ -6,7 +6,7 @@ automodinit + X
 
 from autoxinit import autoxinit
 
-__version__ = '0.1.2'
+__version__ = '0.1.3'
 __author__ = 'Karl Bedrich'
 __email__ = 'karl@bedrich.de'
 __url__ = 'http://pypi.python.org/pypi/AutoXInit/'

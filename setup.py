@@ -49,9 +49,6 @@ setup(
 
 
 
-
-
-
 ## remove the build
 ## else old and notexistent files could come again in the installed pkg
 #mainPath = os.path.abspath(os.path.dirname(__file__))
